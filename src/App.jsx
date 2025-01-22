@@ -13,7 +13,9 @@ const App = () => {
   };
 
   const decrement = () => {
-    setValue(value - 1);
+    if (value > 0) {
+      setValue(value - 1);
+    }
   };
 
   return (
